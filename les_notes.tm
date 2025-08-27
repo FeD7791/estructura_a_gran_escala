@@ -162,13 +162,14 @@
   Si ahora calcularamos el valor de expectacion:
 
   <\equation*>
-    <around*|\<langle\>|n<rsub|i>|\<rangle\>>=<big|sum><rsub|k=0><rsup|\<infty\>>k
+    <around*|\<langle\>|n<rsub|i>|\<rangle\>>=<big|sum><rsub|k=0><rsup|\<infty\>>x<rsub|k>
     P<around*|(|n<rsub|i>=k|)>
   </equation*>
 
   Sabemos que solo hay 2 posibilidades, <math|n<rsub|i>=0,1> para el resto,
   las probabilidades son extremadamente bajas y por lo tanto podriamos decir
-  que: <math|P<around*|(|n<rsub|i>=k|)>=0 \<forall\>k\<gtr\>1>. Entonces:
+  que: <math|P<around*|(|n<rsub|i>=k|)>=0 \<forall\>x<rsub|k>\<gtr\>1>.
+  Entonces:
 
   <\equation*>
     <around*|\<langle\>|n<rsub|i>|\<rangle\>>=0\<cdummy\>
@@ -183,9 +184,162 @@
     d V<rsub|i>=<around*|\<langle\>|n<rsub|i>|\<rangle\>>
   </equation*>
 
-  Lo mismo sucede con los momentos de orden mas alto.
+  Lo mismo sucede con los momentos de orden mas alto. Para el caso de dos
+  volumenes calculariamos:\ 
+
+  <\equation*>
+    <around*|\<langle\>|n<rsub|i> n<rsub|j>|\<rangle\>>=<big|sum><rsub|k
+    ><big|sum><rsub|l>x<rsub|k> x<rsub|l>
+    P<around*|(|n<rsub|i>=k,n<rsub|j>=l|)>=P<around*|(|n<rsub|i>=1,n<rsub|j>=1|)>=n<rsup|2><around*|(|n
+    d V<rsub|i>|)><around*|(|n d V<rsub|j>|)><around*|[|1+\<xi\><around*|(|r<rsub|1
+    2>|)>|]>
+  </equation*>
+
+  Donde el ultimo paso de la igualdad tenemos la probabilidad adjunta:
+  <math|P<around*|(|n<rsub|i>=1,n<rsub|j>=1|)>>.
+
+  Si ahora quisieramos calcular el conteo total en todas las celdas, es decir
+  calcular el <math|N> total para toda la caja, tenemos que sumar todas las
+  ocupancias en los volumenes infinitesimales.
+
+  <\equation*>
+    N=<big|sum><rsub|i>n<rsub|i>
+  </equation*>
+
+  Por otro lado podemos calcular el conteo promedio:
+
+  <math|<around*|\<langle\>|N|\<rangle\>>=<around*|\<langle\>|<big|sum><rsub|i>n<rsub|i>|\<rangle\>>=>linealidad
+  valor expetacion<math|=<big|sum><rsub|i><around*|\<langle\>|n<rsub|i>|\<rangle\>>=<big|sum><rsub|i>P<around*|(|n<rsub|i>=1|)>=<big|sum><rsub|i>n
+  d V<rsub|i>>
+
+  En el limite continuo la suma se convierte en una integral:
+  <math|<big|sum><rsub|i>n d V<rsub|i>=<big|int><rsub|V>n d V=n V>
+
+  En consecuencia obtenemos el resultado final:
+
+  <\equation*>
+    <around*|\<langle\>|N|\<rangle\>>=n V
+  </equation*>
+
+  <math|>Calculemos ahora: <math|<around*|\<langle\>|N<rsup|2>|\<rangle\>>>
+
+  <\equation*>
+    N<rsup|2>=N\<cdummy\>N=<big|sum><rsub|i>n<rsub|i><big|sum><rsub|j>n<rsub|j>=<big|sum><rsub|i><big|sum><rsub|j>n<rsub|i>
+    n<rsub|j>=<big|sum><rsub|i>n<rsub|i><rsup|2>+<big|sum><rsub|i\<neq\>j>n<rsub|i>
+    n<rsub|j>
+  </equation*>
+
+  Teniendo esto en cuenta ahora podemos calcular:\ 
+
+  <\equation*>
+    <around*|\<langle\>|N<rsup|2>|\<rangle\>>=<big|sum><rsub|i><around*|\<langle\>|n<rsub|i><rsup|2>|\<rangle\>>+<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>
+    n<rsub|j>|\<rangle\>>
+  </equation*>
+
+  En este punto, acordarse que: <math|<around*|\<langle\>|n<rsub|i><rsup|2>|\<rangle\>>=<around*|\<langle\>|n<rsub|i>|\<rangle\>>>,
+  de manera que: <math|<big|sum><rsub|i><around*|\<langle\>|n<rsub|i><rsup|2>|\<rangle\>>=<big|sum><rsub|i><around*|\<langle\>|n<rsub|i>|\<rangle\>>=<around*|\<langle\>|N|\<rangle\>>=n
+  V>. Esto representa los terminos de la diagonal. Ahora vamos con los
+  terminos fuera de la diagonal:
 
   \;
+
+  Sabemos que: <math|<around*|\<langle\>|n<rsub|i>
+  n<rsub|j>|\<rangle\>>=n<rsup|2><around*|(|n d V<rsub|i>|)><around*|(|n d
+  V<rsub|j>|)><around*|[|1+\<xi\><around*|(|r<rsub|i j>|)>|]>>. Entonces para
+  el caso: <math|<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>
+  n<rsub|j>|\<rangle\>>> podemos pasar a integrales:
+
+  <\equation*>
+    <big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>
+    n<rsub|j>|\<rangle\>>\<rightarrow\><big|int><rsub|V>n<rsup|2>
+    <around*|[|1+\<xi\><around*|(|r<rsub|1 2>|)>|]> d V<rsub|1> d V<rsub|2>
+  </equation*>
+
+  En consecuencia, juntando todo:
+
+  <\equation*>
+    <around*|\<langle\>|N<rsup|2>|\<rangle\>>=<big|sum><rsub|i><around*|\<langle\>|n<rsub|i><rsup|2>|\<rangle\>>+<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>
+    n<rsub|j>|\<rangle\>>=n V+<big|int><rsub|V>n<rsup|2>
+    <around*|[|1+\<xi\><around*|(|r<rsub|1 2>|)>|]> d V<rsub|1> d V<rsub|2>
+  </equation*>
+
+  A modo de conclusion tenemos entonces que la varianza se puede expresar
+  como:
+
+  <\equation*>
+    Var<around*|(|N|)>=<around*|\<langle\>|N<rsup|2>|\<rangle\>>-<around*|\<langle\>|N|\<rangle\>><rsup|2>=n
+    V+<big|int><rsub|V>n<rsup|2> <around*|[|1+\<xi\><around*|(|r<rsub|1
+    2>|)>|]> d V<rsub|1> d V<rsub|2>-n <rsup|2>V<rsup|2>
+  </equation*>
+
+  Podemos elaborar la integral:
+
+  <\equation*>
+    <big|int><rsub|V>n<rsup|2> <around*|[|1+\<xi\><around*|(|r<rsub|1
+    2>|)>|]> d V<rsub|1> d V<rsub|2>=n<rsup|2>
+    V<rsup|2>+<big|int><rsub|V>\<xi\><around*|(|r<rsub|12>|)> d V<rsub|1> d
+    V<rsub|2>
+  </equation*>
+
+  De manera que finalmente obtenemos:
+
+  <\equation*>
+    Var<around*|(|N|)>=n V+n<rsup|2><big|int><rsub|V>\<xi\><around*|(|r<rsub|12>|)>
+    d V<rsub|1> d V<rsub|2>\ 
+  </equation*>
+
+  Se puede ir un poco mas lejos y escribi:
+
+  <\equation*>
+    Var<around*|(|N|)>=n V+n<rsup|2>V <big|int><rsub|V>\<xi\><around*|(|r<rsub|1
+    2>|)>d V=n V<around*|(|1+n <big|int><rsub|V>\<xi\><around*|(|r<rsub|1
+    2>|)>d V|)>
+  </equation*>
+
+  <subsubsection|Calculo de la media de N^3>
+
+  Podemos intentar calcular <math|<around*|\<langle\>|N<rsup|3>|\<rangle\>>>
+  para ver que obtenemos:
+
+  <\equation*>
+    <around*|\<langle\>|N<rsup|3>|\<rangle\>>=<around*|\<langle\>|<big|sum><rsub|i><big|sum><rsub|j><big|sum><rsub|k>n<rsub|i>
+    n<rsub|j> n<rsub|k>|\<rangle\>>=<around*|\<langle\>|<big|sum><rsub|i>n<rsub|i><rsup|3>+3<big|sum><rsub|i\<neq\>j>n<rsub|i><rsup|2>n<rsub|j>+6<big|sum><rsub|i\<less\>j\<less\>k>n<rsub|i>n<rsub|j>n<rsub|k>|\<rangle\>>
+  </equation*>
+
+  Esta expresion se puede dividir en 3:
+
+  <\equation*>
+    <big|sum><rsub|i><around*|\<langle\>|n<rsub|i><rsup|3>|\<rangle\>>+3<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i><rsup|2>n<rsub|j>|\<rangle\>>+6<big|sum><rsub|i\<less\>j\<less\>k><around*|\<langle\>|n<rsub|i>n<rsub|j>n<rsub|k>|\<rangle\>>
+  </equation*>
+
+  Nuevamente, sabemos que, por lo visto al principio:
+  <math|<around*|\<langle\>|n<rsub|i><rsup|3>|\<rangle\>>=<around*|\<langle\>|n<rsub|i>|\<rangle\>>>.
+  Por otro lado, podemos decir que <math|n<rsub|i><rsup|2>=n<rsub|i>> en el
+  contexto de que <math|n<rsub|i>> toma solo valores 0 o 1. De manera que la
+  suma anterior la podemos expresar como:
+
+  <\equation*>
+    <big|sum><rsub|i><around*|\<langle\>|n<rsub|i>|\<rangle\>>+3<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>n<rsub|j>|\<rangle\>>+6<big|sum><rsub|i\<less\>j\<less\>k><around*|\<langle\>|n<rsub|i>n<rsub|j>n<rsub|k>|\<rangle\>>
+  </equation*>
+
+  Los primeros 2 terminos ya los conocemos:
+
+  <\equation*>
+    <big|sum><rsub|i><around*|\<langle\>|n<rsub|i>|\<rangle\>>+<big|sum><rsub|i\<neq\>j><around*|\<langle\>|n<rsub|i>n<rsub|j>|\<rangle\>>=n
+    V+<with|color|red|3><big|int><rsub|V>n<rsup|2>
+    <around*|[|1+\<xi\><around*|(|r<rsub|1 2>|)>|]> d V<rsub|1> d V<rsub|2>
+  </equation*>
+
+  Si trabajamos el ultimo termino:
+
+  <\equation*>
+    <big|sum><rsub|i\<less\>j\<less\>k><around*|\<langle\>|n<rsub|i>n<rsub|j>n<rsub|k>|\<rangle\>>=<big|sum><rsub|i\<less\>j\<less\>k>
+    x<rsub|i> x<rsub|j> x<rsub|k> P<around*|(|n<rsub|i>=i,n<rsub|j>=j,n<rsub|k>=k|)>
+  </equation*>
+
+  Donde solo sobreviven las opciones <math|x=1>
+
+  <math|>
 </body>
 
 <\initial>
@@ -196,22 +350,48 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-2|<tuple|1.1|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-3|<tuple|1.1.1|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-4|<tuple|1|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-5|<tuple|1.2|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-6|<tuple|1.3|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
-    <associate|auto-7|<tuple|1.3.1|?|../../.TeXmacs/texts/scratch/no_name_6.tm>>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|1.1|1>>
+    <associate|auto-3|<tuple|1.1.1|1>>
+    <associate|auto-4|<tuple|1|1>>
+    <associate|auto-5|<tuple|1.2|1>>
+    <associate|auto-6|<tuple|1.3|2>>
+    <associate|auto-7|<tuple|1.3.1|3>>
+    <associate|auto-8|<tuple|1.3.2|?>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
+    <\associate|figure>
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|1>|>
+        \;
+      </surround>|<pageref|auto-4>>
+    </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Funcion
       de Correlacion> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1.1<space|2spc>Breve apartado: Valores de
+      espectacion <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|2tab>|1.1.1<space|2spc>Propiedades de los valores
+      de expectacion <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|1.2<space|2spc>Funcion de Correlacion de
+      dos puntos <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|1.3<space|2spc>Moments of counts of objects
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|2tab>|1.3.1<space|2spc>Randomly placed Cell
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
     </associate>
   </collection>
 </auxiliary>
