@@ -190,7 +190,7 @@
   <\equation*>
     <around*|\<langle\>|n<rsub|i> n<rsub|j>|\<rangle\>>=<big|sum><rsub|k
     ><big|sum><rsub|l>x<rsub|k> x<rsub|l>
-    P<around*|(|n<rsub|i>=k,n<rsub|j>=l|)>=P<around*|(|n<rsub|i>=1,n<rsub|j>=1|)>=n<rsup|2><around*|(|n
+    P<around*|(|n<rsub|i>=k,n<rsub|j>=l|)>=P<around*|(|n<rsub|i>=1,n<rsub|j>=1|)>=<around*|(|n
     d V<rsub|i>|)><around*|(|n d V<rsub|j>|)><around*|[|1+\<xi\><around*|(|r<rsub|1
     2>|)>|]>
   </equation*>
@@ -339,6 +339,64 @@
 
   Donde solo sobreviven las opciones <math|x=1>
 
+  \;
+
+  <subsection|Funcion de correlacion angular de 2 puntos>
+
+  En esta seccion ahora lo que hacemos es proyectar nuestros objetos en un
+  plano, concretamente en la superficie de una esfera y donde mediremos las
+  distancias angulares entre objetos. Podemos considerar entonces una
+  densidad por unidad de <with|color|blue|Superficie>:
+
+  <\equation*>
+    n=<frac|N|d \<Omega\><rsub|tot>>
+  </equation*>
+
+  Entonces, la probabilidad de encontrar un objeto en un diferencial de
+  angulo solido estara dada por:
+
+  <\equation*>
+    P<around*|(|objeto en d\<Omega\>|)>=n d \<Omega\>
+  </equation*>
+
+  Podemos por ejemplo calcular la media (o primer momento) de encontrar un
+  objeto:
+
+  <\equation*>
+    <around*|\<langle\>|N|\<rangle\>>=<around*|\<langle\>|<big|sum><rsub|i>n<rsub|i>|\<rangle\>>=<big|sum><rsub|i><around*|\<langle\>|n<rsub|i>|\<rangle\>>=<around*|\<langle\>|n<rsub|i>|\<rangle\>>=n<big|int>d\<Omega\>=n
+    \<Omega\>
+  </equation*>
+
+  Nuevamente podemos tratar de calcular la varianza en este contexto, pero
+  para ello tendremos que resolver cual es la probabilidad adjunta:
+
+  <\equation*>
+    <around*|\<langle\>|n<rsub| i> n<rsub|j>|\<rangle\>>=n<rsup|2>d
+    \<Omega\><rsub|i>d \<Omega\><rsub|j> <around*|[|1+w<around*|(|\<theta\><rsub|1
+    2>|)>|]>
+  </equation*>
+
+  Donde la definicion es similar a la vista en la funcion de correlacion,
+  solo que ahora la distancia es angular y esta en un plano esferico. Todas
+  las cosas que habiamos calculado anteriormente son aplicables para este
+  caso.
+
+  <subsubsection|Estimacion de <math|w<around*|(|\<theta\>|)>>>
+
+  El estimado de la densidad de objetos encontrados en una region
+  <math|\<Omega\>> esta dada por la densidad media:
+
+  <\equation*>
+    n=<frac|N|\<Omega\>>
+  </equation*>
+
+  One sees from equation ( 45.4) that the expected count of pairs at
+  separation <math|\<theta\>,\<theta\>+d \<theta\>>
+
+  <math|n<rsub|p>=<frac|1|2>N<rsup|2>\<Omega\><around*|\<langle\>|d\<Omega\>|\<rangle\>><around*|[|1+w<around*|(|\<theta\><rsub|1>|)>|]>>
+
+  \;
+
   <math|>
 </body>
 
@@ -351,13 +409,15 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
+    <associate|auto-10|<tuple|1.4.1|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
     <associate|auto-5|<tuple|1.2|1>>
     <associate|auto-6|<tuple|1.3|2>>
     <associate|auto-7|<tuple|1.3.1|3>>
-    <associate|auto-8|<tuple|1.3.2|?>>
+    <associate|auto-8|<tuple|1.3.2|4>>
+    <associate|auto-9|<tuple|1.4|?>>
   </collection>
 </references>
 
@@ -392,6 +452,10 @@
       <with|par-left|<quote|2tab>|1.3.1<space|2spc>Randomly placed Cell
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
+
+      <with|par-left|<quote|2tab>|1.3.2<space|2spc>Calculo de la media de N^3
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
     </associate>
   </collection>
 </auxiliary>
