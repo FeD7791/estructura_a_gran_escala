@@ -54,9 +54,14 @@
 
     <item>Consider a tiny region of volume <math|d V>. On average, the
     expected number of objects in that region is
-    <math|<around*|\<langle\>|N|\<rangle\>>=n V>. The probability of finding
-    an object in <math|d V> in one realization is<with|font-series|bold|>
-    <math|P=n d V>
+    <math|<around*|\<langle\>|N|\<rangle\>>=n V>. Aqui lo que dice es que si
+    se considera un volumen <math|V> la probabilidad media de encontrar un
+    objeto es <math|n V>.\ 
+
+    <item>The probability of finding an object in <math|d V> in one
+    realization is<with|font-series|bold|> <with|color|red|<math|P=n d V>>
+    esto lo que nos dice es que <math|n> aqui es una densidad de
+    probabilidad.
 
     <item>The two-point correlation function is defined by the joint
     probability of finding an object in both of the volume elements: <math|d
@@ -103,7 +108,7 @@
     </equation*>
 
     <item>If galaxies were just sprinkled randomly at mean number density
-    <math|n>n, then the expected number of neighbors in a sphere of radius
+    <math|n>, then the expected number of neighbors in a sphere of radius
     <math|r>r is simply density <math|\<times\>> volume:
 
     <\equation*>
@@ -288,7 +293,7 @@
     d V<rsub|1> d V<rsub|2>\ 
   </equation*>
 
-  Se puede ir un poco mas lejos y escribi:
+  Se puede ir un poco mas lejos y escribir:
 
   <\equation*>
     Var<around*|(|N|)>=n V+n<rsup|2>V <big|int><rsub|V>\<xi\><around*|(|r<rsub|1
@@ -377,23 +382,168 @@
   </equation*>
 
   Donde la definicion es similar a la vista en la funcion de correlacion,
-  solo que ahora la distancia es angular y esta en un plano esferico. Todas
-  las cosas que habiamos calculado anteriormente son aplicables para este
-  caso.
+  solo que ahora la distancia es angular y esta sobre una superficie
+  esferica. Todas las cosas que habiamos calculado anteriormente son
+  aplicables para este caso. Entiendase que en este caso ya no estamos en 3D
+  si no en 2D.
 
-  <subsubsection|Estimacion de <math|w<around*|(|\<theta\>|)>>>
+  Para colaborar con la comprension del concepto, Peebles dice esto en la ec
+  45.3: <em|The two-point correlation function is defined by the joint
+  probability of finding objects in both of the elements of solid angle
+  <math|d \<Omega\><rsub|1>> and <math|d \<Omega\><rsub|2>> placed at a
+  separation <math|\<theta\><rsub|1 2>>>.
 
-  El estimado de la densidad de objetos encontrados en una region
-  <math|\<Omega\>> esta dada por la densidad media:
+  <subsection|Relacion entre la funcion de correlacion de dos puntos angular
+  y espacial.>
+
+  <\subsection>
+    Estableciendo la relacion inicial entre <math|w<around*|(|\<theta\>|)>> y
+    <math|\<xi\><around*|(|r|)>>
+  </subsection>
+
+  <\itemize-dot>
+    <item>Lo que queremos hacer ahora es relacionar la funcion de correlacion
+    angular <math|w<around*|(|\<theta\>|)>> con la funcion de correlacion
+    espacial <math|\<xi\><around*|(|r|)>>.\ 
+
+    <item>Para encontrar esa relacion, empezamos considerando el caso para
+    galaxias en un survey, las cuales tienen ahora asociada una magnitud en
+    un dado volumen. Recordemos que para magnitudes la funcion de luminosidad
+    nos da el numero de objetos entre <math|M> y <math|M+d M>. Entonces, el
+    numero de galaxias por unidad de volumen sera:
+    <math|\<phi\><around*|(|M|)> d M>.
+
+    <item>En el siguiente paso lo que queremos hacer es computar el numero de
+    objetos en un rango de magnitud y dentro de un volumen dado. La
+    probabilidad de encontrar entonces un objeto en un dado rango de
+    magnitudes y en un volumen es:
+
+    <\equation*>
+      d P=\<phi\><around*|(|M|)> d M d V
+    </equation*>
+
+    <item>Pero ahora volvemos a preguntarnos por el caso de encontrar un
+    objeto de una determinada magnitud y despues otro a otra magnitud dada en
+    volumenes distintos:
+
+    <\equation*>
+      d P<rsub|1 2>=<around*|[|\<phi\><around*|(|M<rsub|1>|)>\<phi\><around*|(|M<rsub|2>|)>+\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1
+      2>|)>|]>d M<rsub|1> d M<rsub|2>d V<rsub|1> d V<rsub|2>
+    </equation*>
+
+    <item>Peebles destaca que:\ 
+
+    <\itemize-minus>
+      <item><math|n=<big|int>\<phi\><around*|(|M|)> d M>
+
+      <item><math|n<rsup|2>\<xi\><around*|(|r|)>=<big|int>d M<rsub|1> d
+      M<rsub|2>\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r|)>>
+    </itemize-minus>
+
+    Esto ultimo se hace para tratar de encontrar una conexion con la funcion
+    de correlacion espacial. En las definiciones anteriores vimos que:\ 
+
+    <\equation*>
+      d P<rsub|1 2>=n<rsup|2><around*|[|1+\<xi\><around*|(|r|)>|]>d V<rsub|1>
+      d V<rsub|2>
+    </equation*>
+
+    Entonces podriamos hacer:
+
+    <\equation*>
+      <around*|{|<around*|[|\<phi\><around*|(|M<rsub|1>|)>\<phi\><around*|(|M<rsub|2>|)>+\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1
+      2>|)>|]>d M<rsub|1> d M<rsub|2>|}>d V<rsub|1> d
+      V<rsub|2>=n<rsup|2><around*|[|1+\<xi\><around*|(|r|)>|]>d V<rsub|1> d
+      V<rsub|2>\ 
+    </equation*>
+
+    Si integramos en <math|M<rsub|i>>:
+
+    <math|><math|<around*|[|<big|int>\<phi\><around*|(|M<rsub|1>|)>\<phi\><around*|(|M<rsub|2>|)>d
+    M<rsub|1> d M<rsub|2>+<big|int>\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1
+    2>|)>d M<rsub|1> d M<rsub|2>|]>d V<rsub|1> d V<rsub|2>=>
+
+    <\equation*>
+      n<rsup|2>+<with|color|blue|<big|int>\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1
+      2>|)>d M<rsub|1> d M<rsub|2>>=n<rsup|2><around*|[|1+\<xi\><around*|(|r|)>|]>=n<rsup|2>+<with|color|blue|n<rsup|2>\<xi\><around*|(|r|)>>
+    </equation*>
+
+    Es decir tendriamos que:
+
+    <\equation*>
+      <block*|<tformat|<table|<row|<cell|<with|color|black|<big|int>\<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1
+      2>|)>d M<rsub|1> d M<rsub|2>>=n<rsup|2>\<xi\><around*|(|r|)>>>>>>
+    </equation*>
+
+    \;
+  </itemize-dot>
+
+  <subsection|Relacion modulo distancia>
+
+  <\itemize-dot>
+    <item>A la relacion obtenida anteriormente le agregaremos la relacion de
+    modulo distancia:
+
+    <\equation*>
+      m-M=5 log<around*|(|<frac|r|10<around*|[|pc|]>>|)>
+    </equation*>
+
+    <item>Esta relacion suele expresarse como:
+
+    <\equation*>
+      m=M+5 log r+25
+    </equation*>
+
+    <item>Queremos reemplazar esto en la funcion de luminosidad:
+
+    <\equation*>
+      \<phi\><around*|(|M|)>=\<phi\><around*|(|m-5 log r-25|)>
+    </equation*>
+
+    <item>Entonces en el calculo de nuestra probabilidad
+    <math|P=\<phi\><around*|(|M|)> d M <with|color|red|d V>> pasamos a:
+
+    <\equation*>
+      d P=\<phi\><around*|(|m-5 log r-25|)> d m <with|color|red|r<rsup|2>d r
+      d \<Omega\>>
+    </equation*>
+
+    <item>Donde basicamente <math|d V=r<rsup|2>d r d \<Omega\>>. En lo
+    siguiente se calcula la integral asociada al radio:
+
+    <\equation*>
+      d P=d \<Omega\> d m<big|int>\<phi\><around*|(|m-5 log r-25|)>
+      \ <with|color|black|r<rsup|2>d r>
+    </equation*>
+  </itemize-dot>
+
+  <subsubsection|La relacion numero-magnitud>
+
+  En lo siguiente haremos referencia al apartado de conteo de estrellas. En
+  lineas generales, si consideramos un volumen definido por un angulo solido
+  de <math| \<Omega\>> y una distancia <math|r>, el numero total de estrellas
+  que encontraremos sera:
 
   <\equation*>
-    n=<frac|N|\<Omega\>>
+    N<around*|(|r|)>=\<rho\> V=\<rho\> <frac|1|3>\<Omega\> r<rsup|3>
   </equation*>
 
-  One sees from equation ( 45.4) that the expected count of pairs at
-  separation <math|\<theta\>,\<theta\>+d \<theta\>>
+  De la relacion modulo distancia tenemos que:\ 
 
-  <math|n<rsub|p>=<frac|1|2>N<rsup|2>\<Omega\><around*|\<langle\>|d\<Omega\>|\<rangle\>><around*|[|1+w<around*|(|\<theta\><rsub|1>|)>|]>>
+  <\equation*>
+    m-M=5 log<around*|(|<frac|r|10<around*|[|pc|]>>|)>
+  </equation*>
+
+  Para estrellas de una magnitud absoluta dada <math|M>, para distintas
+  magnitudes obtendremos una distancia asociada:
+
+  <\equation*>
+    r=10<rsup|<around*|(|m-M|)>/5>\<cdummy\>10<around*|[|pc|]>=10<rsup|<around*|(|m-M+5|)>/5><around*|[|pc|]>
+  </equation*>
+
+  \;
+
+  \;
 
   \;
 
@@ -409,15 +559,18 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|1.4.1|?>>
+    <associate|auto-10|<tuple|1.5|6>>
+    <associate|auto-11|<tuple|1.6|6>>
+    <associate|auto-12|<tuple|1.7|7>>
+    <associate|auto-13|<tuple|1.7.1|7>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
     <associate|auto-5|<tuple|1.2|1>>
-    <associate|auto-6|<tuple|1.3|2>>
+    <associate|auto-6|<tuple|1.3|3>>
     <associate|auto-7|<tuple|1.3.1|3>>
     <associate|auto-8|<tuple|1.3.2|4>>
-    <associate|auto-9|<tuple|1.4|?>>
+    <associate|auto-9|<tuple|1.4|5>>
   </collection>
 </references>
 
@@ -456,6 +609,29 @@
       <with|par-left|<quote|2tab>|1.3.2<space|2spc>Calculo de la media de N^3
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>
+
+      <with|par-left|<quote|1tab>|1.4<space|2spc>Funcion de correlacion
+      angular de 2 puntos <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|1tab>|1.5<space|2spc>Relacion entre la funcion de
+      correlacion de dos puntos angular y espacial.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1tab>|1.6<space|2spc>Estableciendo la relacion
+      inicial entre <with|mode|<quote|math>|w<around*|(|\<theta\>|)>> y
+      <with|mode|<quote|math>|\<xi\><around*|(|r|)>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|1.7<space|2spc>Relacion modulo distancia
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12>>
+
+      <with|par-left|<quote|2tab>|1.7.1<space|2spc>La relacion
+      numero-magnitud <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-13>>
     </associate>
   </collection>
 </auxiliary>
