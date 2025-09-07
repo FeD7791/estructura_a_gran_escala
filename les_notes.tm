@@ -1,4 +1,4 @@
-<TeXmacs|2.1.4>
+<TeXmacs|1.99.18>
 
 <style|generic>
 
@@ -541,9 +541,116 @@
     r=10<rsup|<around*|(|m-M|)>/5>\<cdummy\>10<around*|[|pc|]>=10<rsup|<around*|(|m-M+5|)>/5><around*|[|pc|]>
   </equation*>
 
-  \;
+  Se asocia el numero de galaxias hasta magnitud aparente <math|m> a la
+  siguiente ecuacion:
+
+  <\equation*>
+    N<around*|(|m|)>=k10<rsup|0.6m>
+  </equation*>
+
+  <subsection|Continuacion>
+
+  Retomamos el analisis de la integral:
+
+  <\equation*>
+    d P=d \<Omega\> d m<big|int>\<phi\><around*|(|m-5 log r-25|)>
+    \ <with|color|black|r<rsup|2>d r>
+  </equation*>
+
+  <\itemize-dot>
+    <item>Esta expresion representa la probabilidad de encontrar un objeto
+    entre <math|m> y <math|m+d m>
+  </itemize-dot>
+
+  Y ahora hacemos el siguiente cambio de variables: <math|r=s 10<rsup|0.2
+  m>>. Entonces:
+
+  <\equation*>
+    d r=d s 10<rsup|0.2 m>,r<rsup|2>=s<rsup|2>10<rsup|0.4 m>;s<rsup|2> d
+    s=s<rsup|2> 10<rsup|0.6 m>d s
+  </equation*>
+
+  <\equation*>
+    \<phi\><around*|(|m-5 log r-25 |)>=\<phi\><around*|(|m-5 log
+    s-5<around*|(|0.2 m|)>-25|)>=\<phi\><around*|(|-5 log s -25|)>
+  </equation*>
 
   \;
+
+  De manera que la probabilidad de encontrar un objeto es:
+
+  <\equation*>
+    d P=d m d \<Omega\> 10<rsup|0.6 m><big|int><rsub|0><rsup|\<infty\>>s<rsup|2>
+    \<phi\><around*|(|-5 log s-25|)> d s
+  </equation*>
+
+  Lo que hace aqui Peebles es destacar que la relacion numero-magnitud es la
+  correspondiente a la integral:
+
+  <\equation*>
+    <frac|d N|d m>=10<rsup|0.6 m><big|int><rsub|0><rsup|\<infty\>>s<rsup|2>
+    \<phi\><around*|(|-5 log s-25|)> d s
+  </equation*>
+
+  \;
+
+  \ Aunque esta expresion no me consta, de ser asi entonces la probabilidad
+  se puede escribir como:
+
+  <\equation*>
+    d P=<around*|(|d N/d m|)> d m d\<Omega\>
+  </equation*>
+
+  <subsection|Calculo de <math|P=\<phi\><around*|(|M|)> d M <with|color|red|d
+  V>>>
+
+  Recapitulando , recordemos que lo que queriamos era calcular la
+  probabilidad de encontrar un objeto en un rango de magnitudes y de
+  volumenes, de manera que la probabilidad de hacer esto para un solo objeto
+  es:
+
+  <\equation*>
+    P=\<phi\><around*|(|M|)> d M <with|color|red|d V>
+  </equation*>
+
+  En todo lo anterior, esta expresion la terminamos transformando, a la
+  probabilidad de encontrar un objeto con una magnitud definida a una
+  distancia angular <math|\<theta\>>.
+
+  <\equation*>
+    d P=\<phi\><around*|(|m-5 log r-25|)> d m <with|color|red|r<rsup|2>d r d
+    \<Omega\>>
+  </equation*>
+
+  Y finalmente llegamos a una expresion para esta probabilidad dependiente de
+  los conteos de estrellas:
+
+  <\equation*>
+    d P=<around*|(|d N/d m|)> d m d\<Omega\>
+  </equation*>
+
+  Pero ahora, lo que nos interesa es la probabilidad conjunta:
+
+  <\equation*>
+    d P<rsub|1 2>=<around*|[|<around*|(|<frac|d N<rsub|1>|d
+    m<rsub|1>>|)><around*|(|<frac|d N<rsub|2>|d
+    m<rsub|2>>|)>+g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1 2>|)>|]>d
+    m<rsub|1> d m<rsub|2> d \<Omega\><rsub|1> d \<Omega\><rsub|1>
+  </equation*>
+
+  Como podemos ver, aparece nuevamente este termino
+  <math|g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1 2>|)>> de
+  probabilidad conjunta. La expresion final es, a mi entender una expresion
+  en 2D. Peebles escribe la relacion entre 2D y 3D de la siguiente forma:
+
+  <\equation*>
+    g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1
+    2>|)>=<big|int><rsub|0><rsup|\<infty\>>r<rsub|1><rsup|2>
+    r<rsub|2><rsup|2> d r<rsub|1> d r<rsub|2>
+    \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1 2>|)>
+  </equation*>
+
+  <math|r<rsub|1 2><rsup|2>=r<rsub|1><rsup|2>+r<rsub|2><rsup|2>>
 
   \;
 
@@ -563,6 +670,8 @@
     <associate|auto-11|<tuple|1.6|6>>
     <associate|auto-12|<tuple|1.7|7>>
     <associate|auto-13|<tuple|1.7.1|7>>
+    <associate|auto-14|<tuple|1.8|?>>
+    <associate|auto-15|<tuple|1.9|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
