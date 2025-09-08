@@ -859,7 +859,7 @@
     <with|color|black|<math|g=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
     y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
     \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
-    y|)><rsup|2>>|)> d u<with|color|black|>>>
+    y|)><rsup|2>>|)> d u<with|color|black|> d M<rsub|1>d M<rsub|2>>>
 
     Donde hemos indicado explicitamente la dependencia de <math|f<rsub|i>>
     con <math|y>.\ 
@@ -870,7 +870,7 @@
       g=N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
       y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
       \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
-      y|)><rsup|2>>|)> d u
+      y|)><rsup|2>>|)> d u d M<rsub|1>d M<rsub|2>
     </equation*>
 
     <item>De la ecuacion:
@@ -917,6 +917,54 @@
       3D y muestras mas profundas hacen que el clustering angular sea mas
       debil pero no con una forma diferente. (Tienen la misma forma)
     </itemize-minus>
+  </itemize-dot>
+
+  <subsection|Desacoplando magnitud y posicion>
+
+  <\itemize-dot>
+    <item>A partir de aca voy a utilizar <math|\<Phi\>> para denotar a la
+    funcion de luminosidad en lugar de <math|\<phi\>>.
+
+    <item>Empezamos asumiendo que la magnitud absoluta de una galaxia es
+    estadisticamente independiente de su posicion, relativa a otras galaxias.
+    Entonces la distribucion adjunta:
+
+    <\equation*>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|12>|)>=\<Phi\><around*|(|M<rsub|1>|)>\<Phi\><around*|(|M<rsub|2>|)>\<xi\><around*|(|r<rsub|12>|)>
+    </equation*>
+
+    <item>Recomiendo tener en cuenta que:
+    <math|r<rsub|12><rsup|2>\<approx\>u<rsup|2>+\<theta\><rsup|2>r<rsup|2>>
+
+    <item>Asumiendo esto tomemos la ecuacion:
+
+    <\equation*>
+      N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
+      y|)><rsup|2>>|)> d u d M<rsub|1>d M<rsub|2>
+    </equation*>
+
+    Escribimos:
+
+    <\equation*>
+      N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Phi\><around*|(|M<rsub|1>|)>\<Phi\><around*|(|M<rsub|2>|)>\<xi\><around*|(|r<rsub|12>|)>
+      d u d M<rsub|1>d M<rsub|2>
+    </equation*>
+
+    Ahora reorganizamos, teniendo en cuenta que:
+    <math|n=<big|int>\<Phi\><around*|(|M<rsub|i>|)> d M<rsub|i>> es la
+    densidad media de galaxias. De manera que tenemos:
+
+    <\equation*>
+      N<rsup|2>w<around*|(|\<theta\>|)>=D<rsup|5> n<rsup|2><big|int>y<rsup|4>
+      d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)>
+      \<xi\><around*|(|r|)> d u
+    </equation*>
+
+    <item>
   </itemize-dot>
 
   \;
@@ -1011,9 +1059,10 @@
     <associate|auto-13|<tuple|1.7.1|7>>
     <associate|auto-14|<tuple|1.8|7>>
     <associate|auto-15|<tuple|1.9|8>>
-    <associate|auto-16|<tuple|1.10|?>>
-    <associate|auto-17|<tuple|1.10.1|?>>
-    <associate|auto-18|<tuple|1.11|?>>
+    <associate|auto-16|<tuple|1.10|9>>
+    <associate|auto-17|<tuple|1.10.1|9>>
+    <associate|auto-18|<tuple|1.11|10>>
+    <associate|auto-19|<tuple|1.12|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
@@ -1092,6 +1141,19 @@
       <with|mode|<quote|math>|P=\<phi\><around*|(|M|)> d M
       <with|color|<quote|red>|d V>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15>>
+
+      <with|par-left|<quote|1tab>|1.10<space|2spc>Aproximacion de
+      separaciones pequenias y relaciones de escala
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-16>>
+
+      <with|par-left|<quote|2tab>|1.10.1<space|2spc>Scaling relation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-17>>
+
+      <with|par-left|<quote|1tab>|1.11<space|2spc>La funcion de seleccion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-18>>
     </associate>
   </collection>
 </auxiliary>
