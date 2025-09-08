@@ -1,4 +1,4 @@
-<TeXmacs|1.99.18>
+<TeXmacs|2.1.4>
 
 <style|generic>
 
@@ -650,7 +650,346 @@
     \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1 2>|)>
   </equation*>
 
-  <math|r<rsub|1 2><rsup|2>=r<rsub|1><rsup|2>+r<rsub|2><rsup|2>>
+  <\equation*>
+    r<rsub|1 2><rsup|2>=r<rsub|1><rsup|2>+r<rsub|2><rsup|2>-2 r<rsub|1>
+    r<rsub|2> cos \<theta\>
+  </equation*>
+
+  <subsection|Aproximacion de separaciones pequenias y relaciones de escala>
+
+  <\itemize-dot>
+    <item>Asumamos que la escala máxima de agrupamiento de galaxias
+    apreciable es pequeña en comparación con las distancias típicas de las
+    galaxias en la muestra.
+
+    <item>Supongamos que tenemos dos galaxias con distancias comoviles
+    <math|r<rsub|1>,r<rsub|2>> y una separacion angular
+    <math|\<theta\><rsub|1 2>>. La separacion en 3D de estos objetos se puede
+    calcular por la ley del coseno en coordenadas esfericas:
+
+    <\equation*>
+      r<rsub|1 2><rsup|2>=r<rsub|1><rsup|2>+r<rsub|2><rsup|2>-2 r<rsub|1>
+      r<rsub|2> cos \<theta\>
+    </equation*>
+
+    <item>Si uno ahora asume la aproximacion por angulos pequenios, donde la
+    separacion angular es <math|\<theta\>\<ll\>1> entonces:\ 
+
+    <\equation*>
+      cos \<theta\>\<thickapprox\>1-<frac|\<theta\><rsup|2>|2>
+    </equation*>
+
+    <item>Si ahora reemplazamos esto en la expresion de la distancia:
+
+    <\equation*>
+      r<rsub|12><rsup|2>=r<rsub|1><rsup|2>+r<rsub|2><rsup|2>-2
+      r<rsub|1>r<rsub|2><around*|(|1-<frac|\<theta\><rsup|2>|2>|)>\<Leftrightarrow\>r<rsub|12><rsup|2>=<with|color|blue|r<rsub|1><rsup|2>+r<rsub|2><rsup|2>-2r<rsub|1>r<rsub|2>>+\<theta\><rsup|2>r<rsub|1>r<rsub|2>
+    </equation*>
+
+    <item>La expresion anterior se puede reescribir:
+
+    <\equation*>
+      r<rsub|12><rsup|2>=<around*|(|r<rsub|1>-r<rsub|2>|)><rsup|2>+\<theta\><rsup|2>r<rsub|1>r<rsub|2>
+    </equation*>
+
+    <item>Ahora lo que se hace es plantear un cambio de variables:
+
+    <math|u=r<rsub|2>-r<rsub|1>> y <math|r=<frac|r<rsub|1>+r<rsub|2>|2>> ; en
+    esta parte se hace una aproximacion: <math|r<rsub|1>r<rsub|2>\<thickapprox\>r<rsup|2>>
+
+    <item>De manera que tenemos:\ 
+
+    <\equation*>
+      r<rsub|12><rsup|2>\<approx\>u<rsup|2>+\<theta\><rsup|2>r<rsup|2>
+    </equation*>
+
+    \;
+  </itemize-dot>
+
+  <subsubsection|Scaling relation>
+
+  Hasta ahora vimos que la expresion para la relacion angular de escala esta
+  dada por:
+
+  <\equation*>
+    g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1
+    2>|)>=<big|int><rsub|0><rsup|\<infty\>>r<rsub|1><rsup|2>
+    r<rsub|2><rsup|2> d r<rsub|1> d r<rsub|2>
+    \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1 2>|)>
+  </equation*>
+
+  En la aproximacion de angulos pequenios: <math|r<rsub|i>\<thickapprox\>r>
+  de manera que esta expresion nos queda:
+
+  <\equation*>
+    g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1
+    2>|)>=<big|int><rsub|0><rsup|\<infty\>>r<rsup|4>d
+    r<big|int><rsub|-\<infty\>><rsup|\<infty\>>
+    \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1 2><around*|(|u,r|)>|)> d
+    u
+  </equation*>
+
+  Ahora, utilizando la ecuacion de modulo de distancia escribe la distancia
+  caracteristica como:
+
+  <math|>
+
+  <\equation*>
+    M=m-5 log r-25\<Leftrightarrow\>D=10<rsup|0.2<around*|(|m-M<rsup|*\<ast\>>|)>-5><around*|[|Mpc|]>
+  </equation*>
+
+  En todo esto lo que hace es considerar <math|r=D y> , que, supuestamente no
+  es mas que un cambio de escala.
+
+  Entonces, cuando hacemos <math|d r=D d y>, de manera que: <math|r<rsup|4> d
+  r=D<rsup|5> y<rsup|4>d y>.
+
+  <\itemize-dot>
+    <item>Por otro lado: <math|<around*|(|r \<theta\>|)><rsup|2>=<around*|(|D
+    y \<theta\>|)><rsup|2>>, de manera que: <math|r<rsub|1
+    2><rsup|2>=u<rsup|2>+<around*|(|D y\<theta\>|)><rsup|2>>
+
+    <item>Encima vamos a hacer otra sub-definicion mas: <math|D \<theta\>=x>
+
+    <item>Si ahora traemos nuevamente la expresion:
+
+    <\equation*>
+      g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1
+      2>|)>=<big|int><rsub|0><rsup|\<infty\>>r<rsup|4>d
+      r<big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,r<rsub|1 2><around*|(|u,r|)>|)>
+      d u
+    </equation*>
+
+    <item>Reemplazamos lo que encontramos anteriormente:
+
+    <\equation*>
+      g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1
+      2>|)>=D<rsup|5><with|color|red|<big|int><rsub|0><rsup|\<infty\>>
+      y<rsup|4>d y><with|color|red|<big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
+      y|)><rsup|2>>|)> d u>
+    </equation*>
+
+    <item>La expresion en rojo la podemos escribir como:
+
+    <\equation*>
+      g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\><rsub|1 2>|)>=D<rsup|5>
+      <with|color|red|g<around*|(|\<Delta\>m,x|)>>
+    </equation*>
+
+    <item>Se debe tener en cuenta que las magnitudes estrella son las
+    siguientes:
+
+    <\itemize-minus>
+      <item><math|M<rsub|i>=M<rsup|\<ast\>>+<frac|\<Delta\>m|2>-5 log y>
+    </itemize-minus>
+
+    <item>A posterior, peebles nos indica que la expresion para la
+    probabilidad que vimos:
+
+    <\equation*>
+      d P=r<rsup|2> d r d \<Omega\> d m \<phi\><around*|(|m-5 log r-25|)>
+    </equation*>
+
+    Si la integramos en la distancia <math|r> obtenemos:
+
+    <\equation*>
+      d P=d \<Omega\> d m <big|int><rsub|0><rsup|r>r<rsup|2>
+      \ \<phi\><around*|(|m-5 log r-25|)>d r
+    </equation*>
+
+    <item>Si le agregamos lo anteriormente visto:
+
+    <\equation*>
+      d P=d \<Omega\> d m D<rsup|3> <big|int><rsub|0><rsup|\<infty\>>y<rsup|2>
+      d y \<phi\><around*|(|M<rsup|\<ast\>>-5 log y|)>
+    </equation*>
+  </itemize-dot>
+
+  <subsection|La funcion de seleccion>
+
+  <\itemize-dot>
+    <item>Hasta ahora se han derivado expresiones para la funcion de conteo
+    de pares <math|g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\>|)>>, donde las
+    galaxias son seleccionadas por su magnitud aparente individual.
+
+    <item>Es decir, si tuviesemos un catalogo ideal donde, cada objeto tiene
+    asociada su magnitud aparente, podriamos trabajar con la funcion
+    <math|g<around*|(|m<rsub|1>,m<rsub|2>,\<theta\>|)>> directamente para el
+    conteo de pares.
+
+    <item>Pero usualmente los catalogos incluyen ciertas galaxias mas
+    brillantes que alguna magnitud limite <math|m<rsub|0>>. En un catalogo
+    real, solamente tenemos objetos con magnitud <math|m\<less\>m<rsub|0>>.
+
+    <item>En lugar de un corte limpio en <math|m<rsub|0>> incluimos una
+    funcion probabilistica, que nos da basicamente la probabilidad de que un
+    objeto de una determinada magnitud este en el catalogo. Por ejemplo, si
+    el catalogo fuera completo hasta <math|m<rsub|0>> entonces significa que
+    la funcion de seleccion es una step function:
+
+    <\equation*>
+      f<around*|(|m-m<rsub|0>|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|1>|<cell|si
+      m\<leqslant\>m<rsub|0>>>|<row|<cell|0>|<cell|si
+      m\<gtr\>m<rsub|0>>>>>>|\<nobracket\>>
+    </equation*>
+
+    <item>En realidad, los objetos cercanos a magnitudes <math|m<rsub|0>>
+    tienen una probabilidad de aparecer o des aparecer debido a errores
+    sistematicos o incompletidues.
+
+    <item>La funcion <math|f<around*|(|m-m<rsub|0>|)>> hace un corte suave al
+    rededor de la magnitud limite <math|m<rsub|0>> en lugar de un corte
+    abrupto como en el caso de un catalogo completo hasta <math|m<rsub|0>>.
+
+    <item>Si entonces consideramos esto para cada objeto:
+
+    <\equation*>
+      f<rsub|\<alpha\>>=f<around*|(|M<rsub|\<alpha\>>-M<rsup|\<ast\>>+<rsub|>5
+      log y|)>
+    </equation*>
+
+    Esta es la probabilidad de seleccion para una galaxia con magnitud
+    <math|M<rsub|\<alpha\>>> localizada a una distancia adimensional
+    <math|y>.\ 
+
+    <item>Escribimos a <math|g> como:
+
+    <with|color|black|<math|g=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
+    y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+    \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
+    y|)><rsup|2>>|)> d u<with|color|black|>>>
+
+    Donde hemos indicado explicitamente la dependencia de <math|f<rsub|i>>
+    con <math|y>.\ 
+
+    <item>Aqui Peebles escribe que entonces:
+
+    <\equation*>
+      g=N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
+      y|)><rsup|2>>|)> d u
+    </equation*>
+
+    <item>De la ecuacion:
+
+    <\equation*>
+      <frac|d N|d m>=10<rsup|0.6 m><big|int><rsub|0><rsup|\<infty\>>s<rsup|2>
+      \<phi\><around*|(|-5 log s-25|)> d s
+    </equation*>
+
+    Podemos calcular: <math|N\<propto\>D<rsup|3>>. Es decir que el numero de
+    galaxias, crece con el factor <math|D> al cubo.
+
+    <item>Si volvemos a la ecuacion:
+
+    <\equation*>
+      N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
+      y|)><rsup|2>>|)> d u
+    </equation*>
+
+    E incluimos que <math|N<rsup|2>\<propto\>D<rsup|6>> obtendremos que:
+    <math|w<around*|(|\<theta\>|)>\<propto\><frac|D<rsup|5>|D<rsup|6>>=D<rsup|-1>>
+
+    <item>Entonces finalmente se plantea:
+    <math|w<around*|(|\<theta\>|)>=D<rsup|-1>W<around*|(|\<theta\> D|)>>.
+    Diagramemos algunas condiciones sobre esto:
+
+    <\itemize-minus>
+      <item>La funcion de correlacion angular <math|w<around*|(|\<theta\>|)>>
+      depende de la variable de escala <math|x=\<theta\> D>, la cual es la
+      separacion fisica proyectada para la profundidad caracteristica del
+      survey.
+
+      <item>Surveys mas profundos (Mayor <math|D>) dan como resultado un
+      clustering aparente menor para una separacion angular fija porque se
+      proyectan más galaxias de primer plano y de fondo no correlacionadas.
+
+      <item>La forma de <math|w<around*|(|\<theta\>|)>> es universal, cuando
+      se la dibuja en funcio nde <math|x=\<theta\> D>, esta es independiente
+      de la profundidad del survey.
+
+      <item>Ley de Escalas de Limber: La proyeccion diluye la correlacion en
+      3D y muestras mas profundas hacen que el clustering angular sea mas
+      debil pero no con una forma diferente. (Tienen la misma forma)
+    </itemize-minus>
+  </itemize-dot>
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
+
+  \;
 
   \;
 
@@ -670,8 +1009,11 @@
     <associate|auto-11|<tuple|1.6|6>>
     <associate|auto-12|<tuple|1.7|7>>
     <associate|auto-13|<tuple|1.7.1|7>>
-    <associate|auto-14|<tuple|1.8|?>>
-    <associate|auto-15|<tuple|1.9|?>>
+    <associate|auto-14|<tuple|1.8|7>>
+    <associate|auto-15|<tuple|1.9|8>>
+    <associate|auto-16|<tuple|1.10|?>>
+    <associate|auto-17|<tuple|1.10.1|?>>
+    <associate|auto-18|<tuple|1.11|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
@@ -741,6 +1083,15 @@
       <with|par-left|<quote|2tab>|1.7.1<space|2spc>La relacion
       numero-magnitud <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13>>
+
+      <with|par-left|<quote|1tab>|1.8<space|2spc>Continuacion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-14>>
+
+      <with|par-left|<quote|1tab>|1.9<space|2spc>Calculo de
+      <with|mode|<quote|math>|P=\<phi\><around*|(|M|)> d M
+      <with|color|<quote|red>|d V>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>
     </associate>
   </collection>
 </auxiliary>
