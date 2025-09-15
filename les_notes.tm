@@ -857,7 +857,7 @@
     <item>Escribimos a <math|g> como:
 
     <with|color|black|<math|g=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
-    y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+    y<rsup|4>d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
     \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
     y|)><rsup|2>>|)> d u<with|color|black|> d M<rsub|1>d M<rsub|2>>>
 
@@ -868,7 +868,7 @@
 
     <\equation*>
       g=N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
-      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
       \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
       y|)><rsup|2>>|)> d u d M<rsub|1>d M<rsub|2>
     </equation*>
@@ -887,7 +887,7 @@
 
     <\equation*>
       N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
-      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
       \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
       y|)><rsup|2>>|)> d u
     </equation*>
@@ -940,7 +940,7 @@
 
     <\equation*>
       N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
-      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
       \<Gamma\><around*|(|M<rsub|1>,M<rsub|2>,<sqrt|u<rsup|2>+<around*|(|x
       y|)><rsup|2>>|)> d u d M<rsub|1>d M<rsub|2>
     </equation*>
@@ -949,7 +949,7 @@
 
     <\equation*>
       N<rsup|2> w<around*|(|\<theta\>|)>=D<rsup|5><big|int><rsub|0><rsup|\<infty\>>
-      y<rsup|4>d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
+      y<rsup|4>d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)><big|int><rsub|-\<infty\>><rsup|\<infty\>>
       \<Phi\><around*|(|M<rsub|1>|)>\<Phi\><around*|(|M<rsub|2>|)>\<xi\><around*|(|r<rsub|12>|)>
       d u d M<rsub|1>d M<rsub|2>
     </equation*>
@@ -960,7 +960,7 @@
 
     <\equation*>
       N<rsup|2>w<around*|(|\<theta\>|)>=D<rsup|5> n<rsup|2><big|int>y<rsup|4>
-      d y f<rsub|1><around*|(|y|)>f<rsub|2><around*|(|y|)>
+      d y f<rsub|1><around*|(|y,M<rsub|1>|)>f<rsub|2><around*|(|y,M<rsub|2>|)>
       \<xi\><around*|(|r|)> d u
     </equation*>
 
@@ -1062,7 +1062,7 @@
     <associate|auto-16|<tuple|1.10|9>>
     <associate|auto-17|<tuple|1.10.1|9>>
     <associate|auto-18|<tuple|1.11|10>>
-    <associate|auto-19|<tuple|1.12|?>>
+    <associate|auto-19|<tuple|1.12|11>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1|1>>
@@ -1154,6 +1154,10 @@
       <with|par-left|<quote|1tab>|1.11<space|2spc>La funcion de seleccion
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-18>>
+
+      <with|par-left|<quote|1tab>|1.12<space|2spc>Desacoplando magnitud y
+      posicion <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-19>>
     </associate>
   </collection>
 </auxiliary>
