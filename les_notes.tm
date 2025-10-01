@@ -1877,7 +1877,31 @@
     a=a<rsub|b>-a<rsub|b>\<varepsilon\><around*|(|t|)>
   </equation*>
 
-  \;
+  Suponemos que el universo esta contenido en una esfera (Eso entiendo) de
+  manera tal que la masa se conserva dentro de la misma:
+
+  <\equation*>
+    \<rho\>a<rsup|3>=\<rho\><rsub|b>a<rsub|b><rsup|3>
+  </equation*>
+
+  Sin embargo uno puede desarrollar la expresion del lado izquierdo:
+
+  <\equation*>
+    \<rho\>a<rsup|3>=\<rho\><around*|[|a<rsub|b><rsup|3><around*|(|1-\<varepsilon\><around*|(|t|)>|)><rsup|3>|]>=\<rho\>a<rsub|b><rsup|3><around*|[|1-3\<varepsilon\><around*|(|t|)>-3\<varepsilon\><rsup|2><around*|(|t|)>-\<varepsilon\><rsup|3><around*|(|t|)>|]>
+  </equation*>
+
+  Tiramos todos los terminos no lineales en <math|\<varepsilon\>>:
+
+  <\equation*>
+    \<rho\>a<rsup|3>\<thickapprox\>\<rho\>a<rsub|b><rsup|3><around*|[|1-3\<varepsilon\><around*|(|t|)>|]>=\<rho\><rsub|b>a<rsub|b><rsup|3>
+  </equation*>
+
+  De manera que como: <math|\<rho\>=<around*|(|1+\<delta\>|)>\<rho\><rsub|b>>
+  , lo que estamos diciendo es que:
+
+  <\equation*>
+    1-3\<varepsilon\><around*|(|t|)>=1+\<delta\>\<Leftrightarrow\>\<delta\>=-3\<varepsilon\>
+  </equation*>
 
   \;
 
@@ -2009,13 +2033,13 @@
     <associate|auto-33|<tuple|3.8|20>>
     <associate|auto-34|<tuple|4|21>>
     <associate|auto-35|<tuple|4.1|21>>
-    <associate|auto-36|<tuple|4.1.1|21>>
+    <associate|auto-36|<tuple|4.1.1|22>>
     <associate|auto-37|<tuple|4.1.2|22>>
     <associate|auto-38|<tuple|4.1.3|23>>
     <associate|auto-39|<tuple|4.2|23>>
     <associate|auto-4|<tuple|1|1>>
-    <associate|auto-40|<tuple|5|27>>
-    <associate|auto-41|<tuple|5.1|?>>
+    <associate|auto-40|<tuple|5|24>>
+    <associate|auto-41|<tuple|5.1|25>>
     <associate|auto-5|<tuple|1.2|1>>
     <associate|auto-6|<tuple|1.3|3>>
     <associate|auto-7|<tuple|1.3.1|3>>
@@ -2192,6 +2216,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Perturbaciones
       lineales> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-40><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|5.1<space|2spc>Soluciones de las ecuaciones
+      con perturbaciones <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-41>>
     </associate>
   </collection>
 </auxiliary>
