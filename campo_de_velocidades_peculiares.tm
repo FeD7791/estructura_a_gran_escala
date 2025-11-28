@@ -760,6 +760,11 @@
   universo (universo cerrado) con la de la expansion y colapso de una
   perturbacion.
 
+  <with|color|dark blue|<em|<text-dots>para que se quede claro \ estoy usando
+  tita \ para describir \ una perturbación con delta estrella \ y esta \ para
+  describir una no perturbación \ o sea algo que tiene delta estrella \ igual
+  a cero \ y comparo esto con esto \ y así voy sabiendo como va<text-dots>>>
+
   Considero que la discusion sobre esto esta excelente, reemplazar por algo
   procesado despues:
 
@@ -767,6 +772,9 @@
 
   Entiendo que esto puede ser mejor procesado y entendido si se tiene en
   cuenta las solusiones que surgian al procesar la delta.
+
+  <subsubsection|Estimacion del radio y el tiempo para la ec 19.11
+  (Dependiente de <math|\<theta\>>)>
 
   <subsection|Density Run>
 
@@ -791,10 +799,11 @@
     <associate|auto-16|<tuple|3|9>>
     <associate|auto-17|<tuple|4|9>>
     <associate|auto-18|<tuple|4.1|10>>
-    <associate|auto-19|<tuple|4.2|10>>
+    <associate|auto-19|<tuple|4.2|11>>
     <associate|auto-2|<tuple|1.1|2>>
-    <associate|auto-20|<tuple|4.2.1|?>>
-    <associate|auto-21|<tuple|4.3|?>>
+    <associate|auto-20|<tuple|4.2.1|12>>
+    <associate|auto-21|<tuple|4.2.2|13>>
+    <associate|auto-22|<tuple|4.3|?>>
     <associate|auto-3|<tuple|1.1.1|2>>
     <associate|auto-4|<tuple|1|3>>
     <associate|auto-5|<tuple|2|4>>
@@ -884,13 +893,21 @@
       Esferico> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|4.1<space|2spc>Motion of a mass shell
+      <with|par-left|<quote|1tab>|4.1<space|2spc>Radio de expansion Maxima
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-18>>
 
-      <with|par-left|<quote|1tab>|4.2<space|2spc>Density Run
+      <with|par-left|<quote|1tab>|4.2<space|2spc>Motion of a mass shell
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19>>
+
+      <with|par-left|<quote|2tab>|4.2.1<space|2spc>Soluciones Parametricas
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20>>
+
+      <with|par-left|<quote|1tab>|4.3<space|2spc>Density Run
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21>>
     </associate>
   </collection>
 </auxiliary>
