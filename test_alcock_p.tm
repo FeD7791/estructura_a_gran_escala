@@ -300,7 +300,47 @@
 
   <subsection|Resultados y problemas de los tests>
 
-  \;
+  <\itemize-dot>
+    <item>Los modelos y los datos no ajustan obteniendo ajustes cosmologicos
+    sesgados. La moraleja de esto, es que las distorsiones tambien afectan al
+    mecanismo de busqueda de vacios. Lo cual se vera un poco mejor en el
+    siguiente paper.
+  </itemize-dot>
+
+  <subsection|Siguiente Paper>
+
+  El objetivo es encontrar alguna conexion entre los voids identificados en
+  redshift y en real space.
+
+  A diferencia de las galaxias, estas cuando hacemos un mapeo entre <math|s>
+  y <math|r> se conservan. Pero los voids no necesariamente se conservan,
+  estos pueden borrarse o bien generarse voids falsos.
+
+  Los resultados obtenidos son los siguientes:
+
+  <\itemize-dot>
+    <item>Existe conservacion de voids para objetos que se encuentran por
+    encima del nivel de shot noise.
+
+    <item>Debido a la dinamica de RSD, los vacios se expanden. Esto
+    nuevemente es un efecto dinamico. A lo largo de la linea de la visual,
+    los voids esfericos aparecen alargados.
+
+    <item>Los centros estan corridos a lo largo de la linea de la visual.
+    Esto estaria asociado a un nuevo fenomeno que no habiamos considerado
+    antes: La dinamica de los voids.
+
+    <item>Consideramos el efecto AP en la dimension de los vacios. Este se
+    manifiesta como una expansion del volumen, o contraccion, debido a la
+    seleccion de la cosmologia fiducial.
+
+    <item>Sorprendentemente, estos efectos pueden tratarse de forma
+    independiente.
+
+    <item>Aparece tambien un nuevo concepto de elipticidad intrinseca de los
+    voids, que vendria a ser como una aproximacion mas fina a la de una
+    esfera.
+  </itemize-dot>
 </body>
 
 <\initial>
@@ -315,6 +355,7 @@
     <associate|auto-10|<tuple|2.1.1|?>>
     <associate|auto-11|<tuple|2.2|?>>
     <associate|auto-12|<tuple|2.3|?>>
+    <associate|auto-13|<tuple|2.4|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1.2|2>>
