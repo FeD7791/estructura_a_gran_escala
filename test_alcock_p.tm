@@ -341,6 +341,45 @@
     voids, que vendria a ser como una aproximacion mas fina a la de una
     esfera.
   </itemize-dot>
+
+  <section|Efectos en el espacio de Redshift>
+
+  <\itemize-dot>
+    <item>Un identificador esferico (almenos) es capaz de encontrar una
+    conexion fisica entre los vacios en el espacio de redshift y en espacio
+    real.\ 
+
+    <item>Supuestamente es posible encontrar un mapa biyectivo para voids por
+    encima del shot noise.
+
+    <item>Voids en el espacio de Redshift sufren de 3 efectos que afectan sus
+    propiedades globales:
+
+    <\enumerate-roman>
+      <item>Expansion - Producto del RSD - Dinamica de galaxias alrededor del
+      void (t-RSD)
+
+      <item>Cambio del Volumen - Producto del efecto AP
+
+      <item>Descentrado - Producto del RSD - Dinamica global (v-RSD)
+    </enumerate-roman>
+  </itemize-dot>
+
+  <subsection|4 Hipotesis asociadas a los modelos de RSD>
+
+  Las siguientes hipotesis, no se cumplen bajo el mapeo Real a Redshift:
+
+  <\enumerate-numeric>
+    <item>Conservacion de pares void-galaxia
+
+    <item>Invariabilidad de la posicion de los centros de voids
+
+    <item>Isotropia del campo de velocidad alrededor de los voids
+
+    <item>Isotropia del campo de densidad alrededor de los voids.
+  </enumerate-numeric>
+
+  \;
 </body>
 
 <\initial>
@@ -352,18 +391,20 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|2.1.1|?>>
-    <associate|auto-11|<tuple|2.2|?>>
-    <associate|auto-12|<tuple|2.3|?>>
-    <associate|auto-13|<tuple|2.4|?>>
+    <associate|auto-10|<tuple|2.1.1|5>>
+    <associate|auto-11|<tuple|2.2|5>>
+    <associate|auto-12|<tuple|2.3|5>>
+    <associate|auto-13|<tuple|2.4|6>>
+    <associate|auto-14|<tuple|3|?>>
+    <associate|auto-15|<tuple|3.1|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.1.1|1>>
     <associate|auto-4|<tuple|1.2|2>>
     <associate|auto-5|<tuple|1.2.1|2>>
     <associate|auto-6|<tuple|1.2.2|2>>
     <associate|auto-7|<tuple|1.3|3>>
-    <associate|auto-8|<tuple|2|?>>
-    <associate|auto-9|<tuple|2.1|?>>
+    <associate|auto-8|<tuple|2|4>>
+    <associate|auto-9|<tuple|2.1|4>>
   </collection>
 </references>
 
@@ -397,6 +438,30 @@
       <with|par-left|<quote|1tab>|1.3<space|2spc>Modelo para la funcion de
       Correlacion GSM <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Ordenando
+      las ideas> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|2.1<space|2spc>La funcion de correlacion
+      cruzada Void Galaxia <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|2tab>|2.1.1<space|2spc>Modelado de la funcion de
+      correlacion <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1tab>|2.2<space|2spc>Primeros 2 papers de Carlos
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|2.3<space|2spc>Resultados y problemas de
+      los tests <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-12>>
+
+      <with|par-left|<quote|1tab>|2.4<space|2spc>Siguiente Paper
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-13>>
     </associate>
   </collection>
 </auxiliary>
