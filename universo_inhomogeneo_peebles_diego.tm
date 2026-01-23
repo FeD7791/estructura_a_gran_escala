@@ -2048,7 +2048,12 @@
   de velocidad inical nula (Ver la ecuacion 15.7 , en ella si
   <math|<with|font-series|bold|v<rsub|>><rsub|i>=0>, tendremos entonces que:
   <math|\<delta\><rsub|i><rprime|'>=<frac|3|5>\<delta\><rsub|i><rsup|\<ast\>>>
-  para el modo creciente).
+  para el modo creciente):
+
+  <\equation*>
+    <with|font-series|bold|v>=<frac|2|5><around*|(|<frac|t|t<rsub|i>>|)><rsup|1/3><around*|[|<with|font-series|bold|v><rsub|i><rsup|p>+<frac|a<rsub|i>|4\<pi\>
+    t<rsub|i>><big|int>d<rsup|3>x<rprime|'>\<delta\><around*|(|<with|font-series|bold|x><rprime|'>|)><frac|<with|font-series|bold|x><rprime|'>-<with|font-series|bold|x>|<around*|\||<with|font-series|bold|x<rprime|'>-><with|font-series|bold|x>|\|><rsup|3>>|]>+<frac|3|5><around*|(|<frac|t<rsub|i>|t>|)><rsup|4/3><around*|[|<with|font-series|bold|v<rsub|>><rsub|i><rsup|p>-<frac|2|3><frac|a<rsub|i>|4\<pi\>t<rsub|i>><big|int>d<rsup|3>x<rprime|'>\<delta\><rsub|i><around*|(|<with|font-series|bold|x><rprime|'>|)><frac|<with|font-series|bold|x<rprime|'>>-<with|font-series|bold|x>|<around*|\||<with|font-series|bold|x<rprime|'>-><with|font-series|bold|x>|\|><rsup|3>>|]>+<around*|(|<frac|t<rsub|i>|t>|)><rsup|2/3><with|font-series|bold|v><rsub|i><rsup|r>
+  </equation*>
 
   <\itemize-dot>
     <item>Considere el radio propio de la cascara que encierra la masa
@@ -2058,11 +2063,8 @@
     <math|r<rsup|2> d<rsup|2>r=-G M d t<rsup|2>> De donde se obtiene:
 
     <\equation*>
-      <around*|(|<frac|d r|d t>|)><rsup|2>=<frac|2 G M|r>+C
+      <around*|(|<frac|d r|d t>|)><rsup|2>=<frac|2 G M|r>+C=W+K=E
     </equation*>
-
-    <item>Como puede verse en la ecuacion anterior, la expresion que tenemos
-    es la de la energia.
 
     <item>Dependiendo de los valores de <math|C> podremos tener que esta
     energia es positiva o negativa. Claramente si <math|C\<gtr\>0> tendremos
@@ -2451,14 +2453,14 @@
     <associate|auto-45|<tuple|6.1.1|24>>
     <associate|auto-46|<tuple|7|24>>
     <associate|auto-47|<tuple|7.1|24>>
-    <associate|auto-48|<tuple|7.1.1|25>>
-    <associate|auto-49|<tuple|7.2|28>>
+    <associate|auto-48|<tuple|7.1.1|24>>
+    <associate|auto-49|<tuple|7.2|25>>
     <associate|auto-5|<tuple|1.3|2>>
-    <associate|auto-50|<tuple|7.3|29>>
-    <associate|auto-51|<tuple|7.4|29>>
-    <associate|auto-52|<tuple|7.5|?>>
-    <associate|auto-53|<tuple|8|?>>
-    <associate|auto-54|<tuple|9|?>>
+    <associate|auto-50|<tuple|7.3|25>>
+    <associate|auto-51|<tuple|7.4|26>>
+    <associate|auto-52|<tuple|7.5|29>>
+    <associate|auto-53|<tuple|8|30>>
+    <associate|auto-54|<tuple|9|30>>
     <associate|auto-6|<tuple|1.4|3>>
     <associate|auto-7|<tuple|2|3>>
     <associate|auto-8|<tuple|3|4>>
@@ -2690,21 +2692,33 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-47>>
 
-      <with|par-left|<quote|1tab>|7.2<space|2spc>Motion of a mass shell.
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|2tab>|7.1.1<space|2spc>Energia Potencial y
+      cinetica <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-48>>
 
-      <with|par-left|<quote|1tab>|7.3<space|2spc>Closed and Flat Cosmological
-      models <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|7.2<space|2spc>Movimiento de una cascara
+      esferica <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-49>>
+
+      <with|par-left|<quote|1tab>|7.3<space|2spc>Introduccion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-50>>
+
+      <with|par-left|<quote|1tab>|7.4<space|2spc>Motion of a mass shell.
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-51>>
+
+      <with|par-left|<quote|1tab>|7.5<space|2spc>Closed and Flat Cosmological
+      models <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-52>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Modelo
       Elipsoidal> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50><vspace|0.5fn>
+      <no-break><pageref|auto-53><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Spherical
       acretion model (25 peebles)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51><vspace|0.5fn>
+      <no-break><pageref|auto-54><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

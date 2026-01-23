@@ -137,7 +137,8 @@
   La relacion existente en las coordenadas <math|\<pi\>> esta dada por:
 
   <\equation*>
-    s<rsub|\<pi\>>=r<rsub|\<pi\>>+<frac|v<rsub|\<pi\>>|a H>
+    s<rsub|\<pi\>>=r<rsub|<around*|\|||\|>>+<frac|v<rsub|<around*|\|||\|>>|a
+    H>
   </equation*>
 
   En ese caso, uno podria decir entonces que:
@@ -220,9 +221,9 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|2|1>>
-    <associate|auto-3|<tuple|2.1|?>>
-    <associate|auto-4|<tuple|2.2|?>>
+    <associate|auto-2|<tuple|2|2>>
+    <associate|auto-3|<tuple|2.1|2>>
+    <associate|auto-4|<tuple|2.2|2>>
   </collection>
 </references>
 
@@ -236,6 +237,14 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Gaussian
       Streaming Model> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|2.1<space|2spc>Explicacion de la tesis de
+      Radinovic <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|2.2<space|2spc>Explicacion de Dante
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
     </associate>
   </collection>
 </auxiliary>
