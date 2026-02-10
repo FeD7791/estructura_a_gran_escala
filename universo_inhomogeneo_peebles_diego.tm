@@ -797,7 +797,8 @@
 
     <item>Punto de vista lagrangiano. Consiste en medir las propiedades del
     fluido en un elemento diferencial del mismo. Aqui es donde entra la
-    derivada covariante, asi que podriamos escribir:
+    derivada covariante, asi que podriamos escribir la ecuacion de Euler
+    como:
 
     <\equation*>
       \<rho\> <with|color|red|<around*|(|<frac|d <with|font-series|bold|u>|d
@@ -850,20 +851,37 @@
       <with|font-series|bold|x>\<cdummy\>\<nabla\><rsub|<with|font-series|bold|x>>|]>\<rho\>+a<rsup|-1>\<nabla\><rsub|<with|font-series|bold|x>><around*|(|\<rho\>
       H a <with|font-series|bold|x>+\<rho\><with|font-series|bold|v>|)>=0
     </equation*>
+
+    En este punto utilizamos que: <math|\<nabla\><rsub|<with|font-series|bold|x>><around*|(|\<rho\>
+    <with|font-series|bold|x>|)>=<with|font-series|bold|x>\<cdummy\>\<nabla\><rsub|<with|font-series|bold|x>>\<rho\>+3
+    \<rho\>>. Esto nos da como resultado:
+
+    <\equation*>
+      <block|<tformat|<table|<row|<cell|<around*|(|<frac|\<partial\>
+      \<rho\>|\<partial\> t>|)><rsub|<with|font-series|bold|x>>+3 H
+      \<rho\>+a<rsup|-1>\<nabla\><rsub|<with|font-series|bold|x>>\<cdummy\><around*|(|\<rho\>
+      <with|font-series|bold|v>|)>=0>>>>>
+    </equation*>
+
+    <item>Ecuacion de Euler: <math|\<rho\>
+    <with|color|red|<with|color|black|<around*|(|<frac|d
+    <with|font-series|bold|u>|d t>|)><rsub|<with|font-series|bold|r>>>>=-\<nabla\><rsub|<with|font-series|bold|r>>p-\<rho\>\<nabla\><rsub|<with|font-series|bold|r>>\<Phi\>>:
+
+    <\equation*>
+      <around*|[|<around*|(|<frac|\<partial\>
+      |\<partial\>t>|)><rsub|<with|font-series|bold|x>>-H
+      <with|font-series|bold|v>\<cdummy\>\<nabla\><rsub|<with|font-series|bold|x>>|]><with|font-series|bold|u>=a<rsup|-1>\<nabla\><rsub|<with|font-series|bold|x>>p-a<rsup|-1>\<rho\>
+      \<nabla\><rsub|<with|font-series|bold|x>>\<Phi\>
+    </equation*>
+
+    <item>Potencial Gravitatorio: <math|\<nabla\><rsup|2>>
+
+    \;
   </itemize-dot>
 
-  En este punto utilizamos que: <math|\<nabla\><rsub|<with|font-series|bold|x>><around*|(|\<rho\>
-  <with|font-series|bold|x>|)>=<with|font-series|bold|x>\<cdummy\>\<nabla\><rsub|<with|font-series|bold|x>>\<rho\>+3
-  \<rho\>>. Esto nos da como resultado:
+  \;
 
-  <\equation*>
-    <block|<tformat|<table|<row|<cell|<around*|(|<frac|\<partial\>
-    \<rho\>|\<partial\> t>|)><rsub|<with|font-series|bold|x>>+3 H
-    \<rho\>+a<rsup|-1>\<nabla\><rsub|<with|font-series|bold|x>>\<cdummy\><around*|(|\<rho\>
-    <with|font-series|bold|v>|)>=0>>>>>
-  </equation*>
-
-  # FALTA EULER - TERMIINAR HOY
+  \;
 
   \;
 
@@ -3884,27 +3902,27 @@
     <associate|auto-32|<tuple|4.4.3|15>>
     <associate|auto-33|<tuple|4.4.4|16>>
     <associate|auto-34|<tuple|4|17>>
-    <associate|auto-35|<tuple|4.5|19>>
+    <associate|auto-35|<tuple|4.5|18>>
     <associate|auto-36|<tuple|5|19>>
-    <associate|auto-37|<tuple|5.1|20>>
-    <associate|auto-38|<tuple|5.1.1|21>>
+    <associate|auto-37|<tuple|5.1|19>>
+    <associate|auto-38|<tuple|5.1.1|20>>
     <associate|auto-39|<tuple|5.1.2|21>>
     <associate|auto-4|<tuple|1|2>>
-    <associate|auto-40|<tuple|5.2|22>>
-    <associate|auto-41|<tuple|5.3|23>>
-    <associate|auto-42|<tuple|5.3.1|24>>
+    <associate|auto-40|<tuple|5.2|21>>
+    <associate|auto-41|<tuple|5.3|22>>
+    <associate|auto-42|<tuple|5.3.1|23>>
     <associate|auto-43|<tuple|5.3.2|24>>
     <associate|auto-44|<tuple|5.4|25>>
     <associate|auto-45|<tuple|5.5|25>>
     <associate|auto-46|<tuple|5.6|25>>
-    <associate|auto-47|<tuple|6|25>>
+    <associate|auto-47|<tuple|6|26>>
     <associate|auto-48|<tuple|6.1|26>>
-    <associate|auto-49|<tuple|6.2|27>>
+    <associate|auto-49|<tuple|6.2|26>>
     <associate|auto-5|<tuple|1.3|2>>
     <associate|auto-50|<tuple|6.3|27>>
     <associate|auto-51|<tuple|6.4|28>>
     <associate|auto-52|<tuple|7|28>>
-    <associate|auto-53|<tuple|7.1|28>>
+    <associate|auto-53|<tuple|7.1|29>>
     <associate|auto-54|<tuple|7.1.1|29>>
     <associate|auto-55|<tuple|8|29>>
     <associate|auto-56|<tuple|8.1|29>>
@@ -3912,44 +3930,44 @@
     <associate|auto-58|<tuple|8.2|30>>
     <associate|auto-59|<tuple|8.3|31>>
     <associate|auto-6|<tuple|1.4|3>>
-    <associate|auto-60|<tuple|8.4|34>>
-    <associate|auto-61|<tuple|8.4.1|36>>
-    <associate|auto-62|<tuple|8.5|37>>
+    <associate|auto-60|<tuple|8.4|32>>
+    <associate|auto-61|<tuple|8.4.1|34>>
+    <associate|auto-62|<tuple|8.5|36>>
     <associate|auto-63|<tuple|8.6|37>>
     <associate|auto-64|<tuple|9|37>>
-    <associate|auto-65|<tuple|10|38>>
-    <associate|auto-66|<tuple|11|39>>
+    <associate|auto-65|<tuple|10|37>>
+    <associate|auto-66|<tuple|11|38>>
     <associate|auto-67|<tuple|11.1|39>>
-    <associate|auto-68|<tuple|11.2|40>>
+    <associate|auto-68|<tuple|11.2|39>>
     <associate|auto-69|<tuple|11.2.1|40>>
     <associate|auto-7|<tuple|2|3>>
     <associate|auto-70|<tuple|11.2.2|41>>
     <associate|auto-71|<tuple|11.2.3|41>>
-    <associate|auto-72|<tuple|11.3|41>>
+    <associate|auto-72|<tuple|11.3|42>>
     <associate|auto-73|<tuple|11.4|42>>
-    <associate|auto-74|<tuple|11.5|43>>
+    <associate|auto-74|<tuple|11.5|42>>
     <associate|auto-75|<tuple|11.5.1|43>>
-    <associate|auto-76|<tuple|11.5.2|43>>
+    <associate|auto-76|<tuple|11.5.2|44>>
     <associate|auto-77|<tuple|11.5.3|44>>
-    <associate|auto-78|<tuple|12|45>>
+    <associate|auto-78|<tuple|12|44>>
     <associate|auto-79|<tuple|12.0.1|45>>
     <associate|auto-8|<tuple|3|4>>
-    <associate|auto-80|<tuple|12.1|45>>
+    <associate|auto-80|<tuple|12.1|46>>
     <associate|auto-81|<tuple|12.2|46>>
-    <associate|auto-82|<tuple|12.3|47>>
-    <associate|auto-83|<tuple|12.4|48>>
-    <associate|auto-84|<tuple|12.4.1|?>>
-    <associate|auto-85|<tuple|12.5|?>>
-    <associate|auto-86|<tuple|13|?>>
-    <associate|auto-87|<tuple|13.1|?>>
-    <associate|auto-88|<tuple|13.2|?>>
+    <associate|auto-82|<tuple|12.3|46>>
+    <associate|auto-83|<tuple|12.4|47>>
+    <associate|auto-84|<tuple|12.4.1|47>>
+    <associate|auto-85|<tuple|12.5|47>>
+    <associate|auto-86|<tuple|13|48>>
+    <associate|auto-87|<tuple|13.1|49>>
+    <associate|auto-88|<tuple|13.2|50>>
     <associate|auto-9|<tuple|1.5|4>>
     <associate|ec06|<tuple|6|22>>
     <associate|ec3|<tuple|3|13>>
     <associate|ec4|<tuple|4|13>>
     <associate|ec6|<tuple|7|22>>
     <associate|ec7|<tuple|8|22>>
-    <associate|ec9|<tuple|9|22>>
+    <associate|ec9|<tuple|9|23>>
     <associate|eq5|<tuple|5|21>>
     <associate|friedman1|<tuple|2|12>>
     <associate|linear|<tuple|1|12>>
@@ -3986,6 +4004,14 @@
       <tuple|normal|<\surround|<hidden-binding|<tuple>|3>|>
         \;
       </surround>|<pageref|auto-8>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|4>|>
+        Esquema de la evolucion de los modos de perturbacion de densdidad
+        <with|mode|<quote|math>|\<delta\><rsub|k>>. Como puede verse hay un
+        periodo de stagnation en la epoca dominada por la radiacion. Esto
+        ocurre para modos tales que estan dentro del horizonte de eventos, es
+        decir <with|mode|<quote|math>|k\<ll\>a H>.
+      </surround>|<pageref|auto-34>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Inflacion>
@@ -4116,209 +4142,226 @@
       <with|par-left|<quote|1tab>|4.5<space|2spc>Soluciones para
       <with|mode|<quote|math>|\<Lambda\>\<neq\>0>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34>>
+      <no-break><pageref|auto-35>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Campo
       de Velocidades Peculiares> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35><vspace|0.5fn>
+      <no-break><pageref|auto-36><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|5.1<space|2spc>Introduccion
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36>>
+      <no-break><pageref|auto-37>>
 
       <with|par-left|<quote|2tab>|5.1.1<space|2spc>Transformacion de la
       ecuacion de Euler a coordenadas comoviles.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37>>
+      <no-break><pageref|auto-38>>
 
       <with|par-left|<quote|2tab>|5.1.2<space|2spc>Ecuacion de continuidad en
       coordenadas comoviles <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38>>
+      <no-break><pageref|auto-39>>
 
       <with|par-left|<quote|1tab>|5.2<space|2spc>Repaso Ecuacion de Poisson -
       Gravedad y acelearcion comovil <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39>>
+      <no-break><pageref|auto-40>>
 
       <with|par-left|<quote|1tab>|5.3<space|2spc>Campo de velocidades
       peculiares <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40>>
+      <no-break><pageref|auto-41>>
 
       <with|par-left|<quote|2tab>|5.3.1<space|2spc>Growth factor
       <with|mode|<quote|math>|f<around*|(|\<Omega\>|)>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-41>>
+      <no-break><pageref|auto-42>>
 
       <with|par-left|<quote|2tab>|5.3.2<space|2spc>La aproximacion de Lahav
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>>
+      <no-break><pageref|auto-43>>
 
       <with|par-left|<quote|1tab>|5.4<space|2spc>Fluido cosmico
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43>>
+      <no-break><pageref|auto-44>>
 
       <with|par-left|<quote|1tab>|5.5<space|2spc>Joining Conditions
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44>>
+      <no-break><pageref|auto-45>>
 
       <with|par-left|<quote|1tab>|5.6<space|2spc>Galaxy Bias
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45>>
+      <no-break><pageref|auto-46>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Aproximacion
       de Zeldovich> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46><vspace|0.5fn>
+      <no-break><pageref|auto-47><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|6.1<space|2spc>Introduccion
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>
+      <no-break><pageref|auto-48>>
 
       <with|par-left|<quote|1tab>|6.2<space|2spc>La aproximacion de
       Zel'dovich <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-49>>
 
       <with|par-left|<quote|1tab>|6.3<space|2spc>Significado de
       <with|mode|<quote|math>|g> y <with|mode|<quote|math>|s>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49>>
+      <no-break><pageref|auto-50>>
 
       <with|par-left|<quote|1tab>|6.4<space|2spc>Causticas y panqueques
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>
+      <no-break><pageref|auto-51>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Funcion
       de Transferencia> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51><vspace|0.5fn>
+      <no-break><pageref|auto-52><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|7.1<space|2spc>Horizonte
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-52>>
+      <no-break><pageref|auto-53>>
 
       <with|par-left|<quote|2tab>|7.1.1<space|2spc>Definicion de entrada en
       el horizonte de eventos <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-54>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Modelo
       Esferico> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54><vspace|0.5fn>
+      <no-break><pageref|auto-55><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|8.1<space|2spc>Introduccion
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>
+      <no-break><pageref|auto-56>>
 
       <with|par-left|<quote|2tab>|8.1.1<space|2spc>Energia Potencial y
       cinetica <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-56>>
+      <no-break><pageref|auto-57>>
 
       <with|par-left|<quote|1tab>|8.2<space|2spc>Movimiento de una cascara
       esferica <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57>>
+      <no-break><pageref|auto-58>>
 
       <with|par-left|<quote|1tab>|8.3<space|2spc>Introduccion
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>
+      <no-break><pageref|auto-59>>
 
       <with|par-left|<quote|1tab>|8.4<space|2spc>Motion of a mass shell.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-59>>
+      <no-break><pageref|auto-60>>
 
       <with|par-left|<quote|2tab>|8.4.1<space|2spc>Evolucion de la cascara
       esferica con energia negativa <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-60>>
+      <no-break><pageref|auto-61>>
 
       <with|par-left|<quote|1tab>|8.5<space|2spc>Closed and Flat Cosmological
       models <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-61>>
+      <no-break><pageref|auto-62>>
 
       <with|par-left|<quote|1tab>|8.6<space|2spc>Density Run
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-62>>
+      <no-break><pageref|auto-63>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Modelo
       Elipsoidal> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-63><vspace|0.5fn>
+      <no-break><pageref|auto-64><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Spherical
       acretion model (25 peebles)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-64><vspace|0.5fn>
+      <no-break><pageref|auto-65><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Funcion
       de Correlacion> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-65><vspace|0.5fn>
+      <no-break><pageref|auto-66><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|11.1<space|2spc>Definicion de Momento
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-66>>
+      <no-break><pageref|auto-67>>
 
       <with|par-left|<quote|1tab>|11.2<space|2spc>Definicion de Funcion de
       correlacion de 2 puntos <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-67>>
+      <no-break><pageref|auto-68>>
 
       <with|par-left|<quote|2tab>|11.2.1<space|2spc>Definicion de funcion de
       correlacion como <with|mode|<quote|math>|\<delta\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-68>>
+      <no-break><pageref|auto-69>>
 
       <with|par-left|<quote|2tab>|11.2.2<space|2spc>Otra definicion mas de
       funcion de correlacion : densidad condicionada
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-69>>
+      <no-break><pageref|auto-70>>
 
       <with|par-left|<quote|2tab>|11.2.3<space|2spc>Algunas propiedades
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-70>>
+      <no-break><pageref|auto-71>>
 
       <with|par-left|<quote|1tab>|11.3<space|2spc>Bias en la funcion de
       Correlacion <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-71>>
+      <no-break><pageref|auto-72>>
 
       <with|par-left|<quote|1tab>|11.4<space|2spc>Funcion de Correlacion de n
       puntos. <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-72>>
+      <no-break><pageref|auto-73>>
 
       <with|par-left|<quote|1tab>|11.5<space|2spc>Funcion de Correlacion
       Angular <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-73>>
+      <no-break><pageref|auto-74>>
 
       <with|par-left|<quote|2tab>|11.5.1<space|2spc>La ecuacion de Limber
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-74>>
+      <no-break><pageref|auto-75>>
 
       <with|par-left|<quote|2tab>|11.5.2<space|2spc>Limite de separaciones
       chicas <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-75>>
+      <no-break><pageref|auto-76>>
 
       <with|par-left|<quote|2tab>|11.5.3<space|2spc>Aproximacion de Ley de
       potencias <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-76>>
+      <no-break><pageref|auto-77>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>El
       espectro de Potencias> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-77><vspace|0.5fn>
+      <no-break><pageref|auto-78><vspace|0.5fn>
+
+      <with|par-left|<quote|2tab>|12.0.1<space|2spc>Una definicion mas
+      generica de espectro de potencias <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-79>>
 
       <with|par-left|<quote|1tab>|12.1<space|2spc>Hipotesis de isotropia
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-78>>
+      <no-break><pageref|auto-80>>
 
       <with|par-left|<quote|1tab>|12.2<space|2spc><with|mode|<quote|math>|\<Delta\><around*|(|k|)>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-79>>
+      <no-break><pageref|auto-81>>
 
       <with|par-left|<quote|1tab>|12.3<space|2spc>Forma Funcional del
       espectro de potencias <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-80>>
+      <no-break><pageref|auto-82>>
+
+      <with|par-left|<quote|1tab>|12.4<space|2spc>Filtering
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-83>>
+
+      <with|par-left|<quote|2tab>|12.4.1<space|2spc>El
+      <with|mode|<quote|math>|<wide|\<sigma\>|^><rsub|8><rsup|2>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-84>>
+
+      <with|par-left|<quote|1tab>|12.5<space|2spc>El espectro de Harrison -
+      Zeldovich <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-85>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|13<space|2spc>Perturbaciones
       relativistas> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-81><vspace|0.5fn>
+      <no-break><pageref|auto-86><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|13.1<space|2spc>Ecuaciones de campo para
       <with|mode|<quote|math>|h<rsub|\<alpha\> \<beta\>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-82>>
+      <no-break><pageref|auto-87>>
 
       <with|par-left|<quote|1tab>|13.2<space|2spc>Soluciones y casos limite.
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-83>>
+      <no-break><pageref|auto-88>>
     </associate>
   </collection>
 </auxiliary>
